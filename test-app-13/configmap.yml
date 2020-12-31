@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: config-app-13
 data:
-  value: 13
+  value: "13"
