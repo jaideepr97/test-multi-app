@@ -9,7 +9,7 @@ spec:
   destination:
     namespace: test-app-{{ . }}
     server: https://kubernetes.default.svc
-  project: loadtest
+  project: {{ default "default" .Values.project }}
   source:
     path: test-app-{{ . }}
     repoURL: https://github.com/jannfis/test-multi-app
