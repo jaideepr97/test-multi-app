@@ -4,7 +4,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: test-app-{{ . }}
-  namespace: argocd
+  namespace: {{ default "argocd" $.Values.namespace }}
 spec:
   destination:
     namespace: test-app-{{ . }}

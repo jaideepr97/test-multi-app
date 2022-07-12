@@ -1,2 +1,3 @@
 numApplications: 100
 project: test-project
+namespace: argocd
